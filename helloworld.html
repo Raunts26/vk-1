@@ -6,16 +6,16 @@
 </head>
 <body>
   <label for="first">Eesnimi: </label>
-  <input type="text" id="first">
+  <input type="text" id="first" onkeyup="hello()">
   <label for="last">Perenimi: </label>
-  <input type="text" id="last">
-  <input type="submit" value="Tervita!" onclick="hello()">
+  <input type="text" id="last" onkeyup="hello()">
 
   <div id="output">
 
   </div>
 
   <script>
+
     function hello() {
       var firstname = document.getElementById("first").value;
       var lastname = document.getElementById("last").value;
