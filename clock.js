@@ -3,9 +3,12 @@ window.onload = function() {
   var clock = document.getElementById("clock");
 
   writeDate();
-};
 
-setInterval(writeDate, 1000);
+  window.setInterval(function() {
+    writeDate();
+
+  }, 500);
+};
 
 function writeDate() {
 
