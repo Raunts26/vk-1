@@ -1,1 +1,28 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello world!</title>
+</head>
+<body>
+  <label for="first">Eesnimi: </label>
+  <input type="text" id="first">
+  <label for="last">Perenimi: </label>
+  <input type="text" id="last">
+  <input type="submit" value="Tervita!" onclick="hello()">
+
+  <div id="output">
+
+  </div>
+
+  <script>
+    function hello() {
+      var firstname = document.getElementById("first").value;
+      var lastname = document.getElementById("last").value;
+
+      document.getElementById("output").innerHTML = ("Tere " + firstname + " " + lastname + "!");
+    }
+  </script>
+
+</body>
+</html>
